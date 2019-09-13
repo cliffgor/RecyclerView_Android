@@ -1,5 +1,6 @@
 package com.example.recyclerview;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -27,12 +28,24 @@ public class MainActivity extends AppCompatActivity {
 
 //        Add Fragment here
 
-        adapter.AddFragment(new CallFragment(),"Call");
-        adapter.AddFragment(new ContactFragment(),"Contact");
-        adapter.AddFragment(new FavouriteFragment(),"Favourite");
+        adapter.AddFragment(new CallFragment(),"");
+        adapter.AddFragment(new ContactFragment(),"");
+        adapter.AddFragment(new FavouriteFragment(),"");
 
         viewpager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewpager);
+
+//        add icons
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_call);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_group);
+        tabLayout.getTabAt(2).setIcon(R.drawable.ic_star);
+
+
+//        Remove Shadow in the action bar
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setElevation(0);
+
 
     }
 }
