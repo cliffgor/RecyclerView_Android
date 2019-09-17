@@ -50,6 +50,12 @@ public class ContactFragment extends Fragment {
         lstContact.add(new Contact("ndogi","(+254) 712345678", R.drawable.cliffgor_icon));
         lstContact.add(new Contact("John","(+254) 712345678", R.drawable.cliffgor_icon));
         lstContact.add(new Contact("wamlambez","(+254) 712345678", R.drawable.cliffgor_icon));
+        lstContact.add(new Contact("Cliff Gor","(+254) 712345678", R.drawable.cliffgor_icon));
+        lstContact.add(new Contact("Noma Gani","(+254) 712345678", R.drawable.cliffgor_icon));
+        lstContact.add(new Contact("mihadarati","(+254) 712345678", R.drawable.cliffgor_icon));
+        lstContact.add(new Contact("ndogi","(+254) 712345678", R.drawable.cliffgor_icon));
+        lstContact.add(new Contact("John","(+254) 712345678", R.drawable.cliffgor_icon));
+        lstContact.add(new Contact("wamlambez","(+254) 712345678", R.drawable.cliffgor_icon));
 
     }
 }
